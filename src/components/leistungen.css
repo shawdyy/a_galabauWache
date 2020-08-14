@@ -1,0 +1,99 @@
+.component_leistungen{
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    background: #e9e9e9;
+}
+.leistungen_cardWrapper{
+    background: white;
+    border: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    padding: 50px 15px;
+    box-sizing: border-box;
+}
+.leistungen_transitionWrapper{
+    position: relative;
+}
+.component_leistungItem{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.leistungItem_h4{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+.leistungItem_5050{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 500px;
+}
+.leistungItem_5050_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+}
+.leistungItem_5050_content.left{
+    padding: 0 50px;
+    font-size: 24px;
+    line-height: 34px;
+}
+.leistungItem_5050_content.right{
+    overflow: hidden;
+}
+.leistungItem_5050_content.right > img{
+    width: 80%;
+    border-radius: 5px;
+}
+.component_slideShow{
+    overflow: hidden;
+    position: relative;
+}
+.component_leistungBar{
+    margin-bottom: 20px;
+}
+.leistungBar_listWrapper{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.leistungBar_listItem{
+    margin: 0 20px;
+    font-size: 22px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    user-select: none;
+    /* border-bottom: 3px solid transparent; */
+    transition: all 300ms;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.leistungBar_listItem::after{
+    display: block;
+    content: attr(title);
+    height: 1px;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+}
+.leistungBar_listItem.selected{
+    /* border-bottom: 3px solid rgb(108,151,100); */
+    color: white;
+    background: rgb(108,151,100);
+    transition: all 300ms;
+}

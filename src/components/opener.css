@@ -1,0 +1,75 @@
+.component_opener{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 90px;
+    overflow: hidden;
+    background: white;
+}
+.opener_half{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.opener_mask{
+    mask: url(./../images/Logo_Wache.svg);
+    mask-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.opener_background{
+    background: url(./../images/tim-cooper-XfqGuWevmvs-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 90%;
+    transform: scale(1.5);
+    width: 100%;
+    height: 100%;
+}
+.opener_backgroundRect{
+    width: 500px;
+    height: 700px;
+    background: linear-gradient(-45deg, rgb(86, 167, 86), rgb(112, 255, 148));
+    opacity: 0.7;
+    position: absolute;
+    top: 110px;
+    right: 160px;
+    border-radius: 20px;
+}
+.opener_foregroundRect{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, rgb(86, 167, 86), rgb(112, 255, 148));
+    opacity: 0.7;
+    position: absolute;
+    bottom: 100px;
+    right: 600px;
+    z-index: 6;
+    border-radius: 20px;
+}
+.opener_hWrapper{
+    color: black;
+    margin-left: 200px;
+}
+.opener_hWrapper > *{
+    margin: 0;
+    margin-top: 20px;
+}
+.opener_hWrapper > h2{
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+}
+.opener_hWrapper > h3{
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
+}
